@@ -4,11 +4,11 @@ import React from 'react';
 import { TabBarIcon } from '../components/TabBarIcon';
 import { HomeNavigator } from './HomeNavigator';
 import { ProfileNavigator } from './ProfileNavigator';
-import { TABS } from '../navigation';
+import { TABS } from '../constants/navigation';
 
 const Tab = createBottomTabNavigator();
 
-const AppNavigator =() =>{
+export function AppNavigator() {
   const { colors } = useTheme();
 
   return (
@@ -25,6 +25,3 @@ const AppNavigator =() =>{
     </Tab.Navigator>
   );
 }
-
-
-export default AppNavigator;
