@@ -11,9 +11,10 @@ const persistConfig = {
   blacklist: ['error', 'status'],
 };
 
+//thunk ((for debug redux ))
 export const store = createStore(
   persistReducer(persistConfig, rootReducer),
   applyMiddleware(thunk.withExtraArgument({ }))
 );
-
+//high order funntion 
 export const persistor = persistStore(store);

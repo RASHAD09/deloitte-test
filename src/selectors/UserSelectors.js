@@ -4,3 +4,4 @@ export const getUser = (state) => {
 
 
 };
+// return the data of user if there is data or empty{}

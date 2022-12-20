@@ -7,7 +7,6 @@ import {Button, ErrorView,} from '../../components';
 
 import {strings} from '../../localization';
 import {styles} from './Login.styles';
-import {errorsSelector} from '../../selectors/ErrorSelectors';
 import {isLoadingSelector} from '../../selectors/StatusSelectors';
 import {shadow ,typography} from '../../theme';
 import DateTimePicker from '@react-native-community/datetimepicker';
@@ -40,10 +39,7 @@ export function Login() {
     setDatePicker(false);
   };
 
-  const errors = useSelector(
-    state => errorsSelector([TYPES.LOGIN], state),
-    shallowEqual,
-  );
+
   const isLoading = useSelector(state =>
     isLoadingSelector([TYPES.LOGIN], state),
   );
@@ -130,7 +126,6 @@ export function Login() {
     {strings.login.bithDate} {date.toDateString()}{' '}
   </Text>
 
-  <ErrorView errors={errors} />
   <Button
     onPress={handleSubmit}
     style={styles.submitButton}

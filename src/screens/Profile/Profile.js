@@ -13,6 +13,7 @@ import ChangeLanguage from '@/components/ChangeLanguage';
 
 export function Profile() {
   const {colors} = useTheme();
+  
   const user = useSelector(getUser);
 
   const dispatch = useDispatch();

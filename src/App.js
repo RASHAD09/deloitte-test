@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   };
 
   return (
+    
     <Provider store={store}>
       <PersistGate onBeforeLift={handleStoreRehydration} persistor={persistor}>
         <GestureHandlerRootView style={styles.container}>

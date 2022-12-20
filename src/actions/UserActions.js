@@ -11,6 +11,8 @@ export const TYPES = {
   LANGUAGE:'LANGUAGE',
 };
 
+
+// action 
 const loginRequest = () => ({
   type: TYPES.LOGIN_REQUEST,
   payload: null,
@@ -36,6 +38,8 @@ const setLanguage = (language) => ({
   type: TYPES.LANGUAGE,
   payload: {language},
 });
+
+
 
 export const login = (username,date,number) => async (dispatch, _, {  }) => {
   try {

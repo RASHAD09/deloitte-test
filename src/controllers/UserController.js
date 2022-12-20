@@ -4,8 +4,8 @@ export class UserController {
   
 
   login({ username ,date,number}) {
-    console.log('number inside login', number)
    
+    //
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           if (username ) {
