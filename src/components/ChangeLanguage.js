@@ -5,7 +5,6 @@ import RNRestart from 'react-native-restart';
 import React, { useState } from 'react';
 import { View, Text ,StyleSheet} from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-// import Localization from 'react-native-localization';
 import {Button} from './Button';
 import {strings} from '../localization';
 
@@ -19,8 +18,6 @@ function ChangeLanguage() {
 const dispatch = useDispatch()
 
   const handlechangeLanguage = () => {
-    console.log('user.language', user?.language)
-
     if (user?.language === 'en') {
       
       dispatch(changelanguage('ar'));

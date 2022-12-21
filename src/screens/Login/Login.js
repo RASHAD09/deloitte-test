@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {View, Text, TextInput} from 'react-native';
 import {shallowEqual, useDispatch, useSelector} from 'react-redux';
 import {login, TYPES} from '../../actions/UserActions';
-import {Button, ErrorView,} from '../../components';
+import {Button, } from '../../components';
 
 import {strings} from '../../localization';
 import {styles} from './Login.styles';
